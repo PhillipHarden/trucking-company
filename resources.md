@@ -22,3 +22,6 @@
 
 ***location icons*** Location icons created by Yogi Aprelliyanto – Flaticon 
 [https://www.flaticon.com/free-icons/location](https://www.flaticon.com/free-icons/location)
+
+***drill icons*** Drill icons created by Freepik – Flaticon 
+[https://www.flaticon.com/free-icons/drill](https://www.flaticon.com/free-icons/drill)
