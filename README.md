@@ -10,3 +10,4 @@ The Designing for Web Standards I course examines the process of creating functi
 *  [http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf](http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf)
 *  [https://www.lipsum.com/](https://www.lipsum.com/)
 *  [https://html.com/semantic-markup/](https://html.com/semantic-markup/)  
+*  [https://seekbrevity.com/semantic-markup-important-web-design/](https://seekbrevity.com/semantic-markup-important-web-design/)
