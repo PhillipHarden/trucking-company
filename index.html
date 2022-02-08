@@ -6,33 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <!--Create and link an external stylesheet to your web page.-->
+    <link rel="stylesheet" href="style.css">
 </head>
-<!-------------------------------------------------------------------->
 
 <body>
-    <!---HEADER--->
     <header>
-        <section id="header-top">
+            <a href="#"><img src="images/drill.png" alt="logo" width=75></a>
+            <p>TOOLS</p>
+            <p>Mega Tools Store</p>
             <ul>
                 <li>
-                    <a href="#"><img src="images/drill.png" alt="logo" width=75></a>
-                    <p>TOOLS</p>
-                    <p>Mega Tools Store</p>
-                </li>
-                <li>
                     <input type="text" placeholder="Search here...">
-                    <button>Search</button>
+                    <button id="search-btn">Search</button>
                 </li>
                 <li>
-                    <img src="images/old-typical-phone.png" alt="phone" width=20>
-                    <h2>Call On Order</h2>
+                    <p>Call On Order</p>
                     <p>+09876-54321</p>
                 </li>
                 <li>
-                    <a href="#"><img src="images/user.png" alt="Account" width=20></a>                
+                    <p>Account Logo</p>           
                 </li>
                 <li>
-                    <a href="#"><img src="images/shopping-cart.png" alt="cart" width=20></a>
                     <!--A description list, with terms and descriptions-->
                     <dl>
                         <!--The <dl> tag is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name).-->
@@ -41,9 +36,6 @@
                     </dl>
                 </li>
             </ul>
-        </section>
-
-        <section id="nav">
             <nav>
                 <ul>
                     <li>
@@ -66,19 +58,13 @@
                     </li>
                 </ul>
             </nav>
-        </section>
- 
-        <section id="breadcrumb-nav">
             <nav>
-                <ul>
+                <ol>
                     <li><a href="#">Home</a></li>
                     <li>About Us</li>
-                </ul>
+                </ol>
             </nav>
-        </section>
-    </header>
-    <!---MAIN SECTION---->
-    <!--The <main> HTML element represents the dominant content of the <body> of a document.-->
+        </header>
     <main>
         <h1>About Us</h1>
         <article>
@@ -147,26 +133,19 @@
     <footer>
         <!--The Newsletter section is a banner style div and should be styled independantly.-->
         <!--I diveded the footer into a header, main, and footer.-->
-        <section id="footer-top">
-                       <img src="images/send.png" alt="Send Newsletter Icon" width=20>
+       
                        <h2>Sign Up For Newsletter</h2>
                        <p>
                            Get latest deals, offers & updates about store.
                        </p>
                        <input type="email" placeholder="Your email address">
                        <button>Subscribe</button>
-        </section>
-        <!--footer main-->
-        <section id="footer-about">
-            <article>
                 <a href="#"><img src="images/drill.png" alt="logo" width=75></a>
                 <p>TOOLS</p>
                 <p>Mega Tools Store</p>
                 <p>
                     Lorem ipsum dolor sit amet is it, consectetur adipiscing elit, sed do eiusmod tempor
                 </p>
-            </article>
-            <article>
                 <h3>Our Company</h3>
                 <ul>
                     <li><a href="#">Terms and conditions of use</a></li>
@@ -175,8 +154,6 @@
                     <li><a href="#">Legal Notice</a></li>
                     <li><a href="#"></a></li>
                 </ul>
-            </article>
-            <article>
                 <a href="#">
                     <h3>Products</h3>
                 </a>
@@ -187,20 +164,13 @@
                     <li><a href="#">Best sales</a></li>
                     <li><a href="#">Stores</a></li>
                 </ul>
-            </article>
-            <article>
                 <h3>Store Information</h3>
                 <ul>
-                    <li><img src="images/map.png" alt="map" width=10> demo
+                    <li>demo
                         United States</li>
-                    <li><img src="images/phone.png" alt="phone" width=10><a href="#">+91 0123456789</a></li>
-                    <li><img src="images/email.png" alt="email" width=10><a href="#">demo@gmail.com</a></li>
+                    <li><a href="#">+91 0123456789</a></li>
+                    <li><a href="#">demo@gmail.com</a></li>
                 </ul>
-            </article>
-        </section>
-            
-        <!--footer footer-->
-        <section id="footer-bottom">
             <ul class="social">
                 <li><a href="#" target="_blank">facebook</a></li>
                 <li><a href="#" target="_blank">twitter</a></li>
@@ -212,7 +182,6 @@
             <!--The <hr> element is most often displayed as a HORIZONTAL RULE that is used to separate content (or define a change) in an HTML page.-->
             <hr>
             <a href="#">&copy; 2022 - Ecommerce software by PrestaShop&trade;</a>
-        </section>
     </footer>
 </body>
 

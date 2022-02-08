@@ -11,3 +11,4 @@ The Designing for Web Standards I course examines the process of creating functi
 *  [https://www.lipsum.com/](https://www.lipsum.com/)
 *  [https://html.com/semantic-markup/](https://html.com/semantic-markup/)  
 *  [https://seekbrevity.com/semantic-markup-important-web-design/](https://seekbrevity.com/semantic-markup-important-web-design/)
+*  [https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
