@@ -11,9 +11,11 @@ body,nav,section,footer,article,h1,h2,h3,p,a,time,ul,li,dl,dt,dd {
 	color: inherit;
 	box-sizing: border-box;
 }
+/* Typography Defaults ================= */
 html{
 	font-size: 62.5%;
 }
+
 body{
 	font-size: 1.4rem;
 	line-height: 1.6;
@@ -21,7 +23,7 @@ body{
 	color: #777;	
 	background-color: #222;
 }
-/* Typography Defaults ================= */
+
 /* Default Structure =================== */
 nav, body > section, footer {
 	max-width: 100rem;
@@ -63,7 +65,7 @@ a{
 }
 /* Header ============================== */
 header{
-	background-color: #555;
+	background-color: #fff;
 }
 nav a {
 	color: #555;
@@ -86,6 +88,12 @@ nav li{
 }
 #blog article:nth-of-type(3){
 	border-top: .5rem solid #1abc9c;
+}
+
+#blog img {
+	width: auto;
+
+	height: 4rem;
 }
 /* News ================================ */
 time span{

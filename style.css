@@ -6,30 +6,151 @@ white: #ffffff
 whitesmoke: #f5f5f5
 dimgray: #666666
 */
-
 /*Add typography styling using the appropriate CSS properties (Google Font using @import, font-family, font-size, line-height, color, etc.).*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-/**/
+/* CSS Reset =========================== */
+body,nav,section,footer,article,h1,h2,h3,p,a,time,ul,li,dl,dt,dd {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 100%;
+	text-decoration: none;
+	font-weight: normal;
+	color: inherit;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
 body{
+	font-size: 1.4rem;
+	line-height: 1.6;
     font-family: 'Poppins', sans-serif;
-    color: dimgray;    
+	color: #666;	
+	background-color: #fff;
+}
+/* Typography Defaults ================= */
+h1,h2, h3{
+	color: #000;
+}
+h1{
+	font-size: 2.6rem;
+	font-weight: 100;
+}
+h2{
+	font-size: 2.3rem;
+}
+h3{
+	font-size: 1.6rem;
+}
+p{
+	margin-bottom: 1rem;
+}
+img{
+	display: block;
+	width: 7rem;
+}
+a{
+	display: inline-block;
+	padding: .5rem 1rem;
 }
 
-ul{
-    /*this removes the bullets*/
-    list-style-type: none;
+/* Header ============================== */
+/* logo */
+
+header p:nth-of-type(1) {
+	color: #093154;
+	font-size: 2.5rem;
+}
+header p:nth-of-type(2) {
+	background-color: #ffbe00;
+	display: inline-block
 }
 
-header li{
-    display: inline;
+/* Search Bar */
+header button{
+	color: #666;
+	background-color: #ffbe00;
 }
+header button:hover{
+	color: #fff;
+	background-color: #093154;
+}
+
+/* Navigation Bar */
+
+nav > ul {
+	color: #fff;
+	background-color: #093154;
+	display: ;
+}
+nav li{
+	display: inline-block;
+}
+nav ul li:nth-of-type(1) {
+	background-color: #ffbe00;
+}
+
+/* Breadcrumb */
+header ol li{
+	font-size: 2.3rem;
+}
+
+/* News ================================ */
+/* About================================ */
+/* ul:not(:nth-of-type(1)) {
+	background-color: aqua;
+  } */
+/* Footer ============================== */
+
+a:nth-last-child(2) {
+	font-size: 1.3rem;
+	background-color: #093154;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Add box model styling using the appropriate CSS properties (max-width, padding, border, margin, display, etc.).*/
+
 /*Add background styling using the appropriate CSS properties (background-image, background-repeat, background-color, etc.).*/
+
 /*DO NOT add Layout styling. DO NOT recreate the entire page layout. Only add the above styling.*/
+
 /*Only include non-semantic elements (divs, spans, etc.) in the HTML if absolutely necessary.*/
+
 /*Avoid excessive use of IDs or classes. Use selectors like descendant, child, nth-of-type, etc. instead.*/
+
 /*Add CSS comments to organize your stylesheet (typography defaults, default structure, header, etc.).*/
+
 /*Make sure that your CSS validates using the W3C CSS Validation Service.*/
+
 /*Commit & Push updates to GitHub.*/
+
 /*Watch the videos in the Resources & Demos for a walk-through of this assignment.*/
