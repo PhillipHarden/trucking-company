@@ -1,0 +1,179 @@
+/* Google Fonts sans-serif, regular and bold */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* CSS reset removes all defaults  */
+/* add elements that are used, header, div */
+body, header, div, nav, section, footer, article, h1, h2, h3, p, a, ul, li, dt, dd {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 100%;
+	text-decoration: none;
+	font-weight: normal;
+	color: inherit;
+	box-sizing: border-box;
+} 
+
+/* browser default is 16 pixels /*
+/* convert font size to base 10, 16 x 0.625 */
+html {
+    font-size: 62.5%;
+}
+
+/* Google Font */
+/* 18 pixels, 1.125rem*/
+body {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+
+}
+
+/* 36 pixels 2em */
+/* 20 pixels with 2rem */
+/* box model properties */
+article {
+  background-color: #aaaaaa;
+  font-size: 2rem;
+  
+}
+
+h1, h2, h3 {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* 35 pixels */
+h1 {
+    font-size: 3.5rem;
+}
+
+
+/* 30 pixels */
+h2 {
+    font-size: 3rem;
+}
+
+/* 25 pixels */
+h3 {
+  font-size: 2.5rem;
+}
+
+/* box model properties */
+/* centering */
+section#blog {
+  background-color: #777;
+   
+/* 	border: 0.2rem solid red; */
+}
+
+/* centering */
+div.wrapper {
+  
+}
+
+
+header {
+	background-color: #222;
+	color: #777;
+}
+
+nav a:hover {
+	color: #c0392b;
+}
+
+/* display property */
+nav li {
+  
+  padding: 1rem;
+	margin: 1rem 1.8rem;
+  width: 20rem;
+	text-align: center;
+/* 	border: 0.2rem solid red; */
+}
+
+/* display property */
+article a {
+  
+	background-color: #c0392b;
+	color: #ffffff;
+	width: 11rem;
+	padding: 1rem;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body, h2, h3, p, a {
+  margin: 0; 
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	box-sizing: border-box;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8em; 18px
+}
+
+article { 
+  font-size: 2em;  36px
+  font-size: 2rem;  20px
+}
+
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+
+box model properties
+centering
+section#blog {
+	background-color: #777;
+
+	max-width: 96rem;
+	margin: 0 auto;
+	border: 2px solid red;
+}
+
+div.wrapper {
+	max-width: 96rem;
+	margin: 0 auto;
+	border: 2px solid red;
+}
+
+display property
+nav li {
+	display: inline-block;
+  padding: 1rem;
+	margin: 1rem 1.8rem;
+  width: 20rem;
+	text-align: center;
+  border: 2px solid red;
+}
+*/

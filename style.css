@@ -5,11 +5,28 @@ gold: #ffbe00
 white: #ffffff
 whitesmoke: #f5f5f5
 dimgray: #666666
+darkgray: #111
 */
 /*Add typography styling using the appropriate CSS properties (Google Font using @import, font-family, font-size, line-height, color, etc.).*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 /* CSS Reset =========================== */
-body,nav,section,footer,article,h1,h2,h3,p,a,time,ul,li,dl,dt,dd {
+body,
+nav,
+section,
+footer,
+article,
+h1,
+h2,
+h3,
+p,
+a,
+time,
+ul,
+li,
+dl,
+dt,
+dd {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -19,123 +36,177 @@ body,nav,section,footer,article,h1,h2,h3,p,a,time,ul,li,dl,dt,dd {
 	color: inherit;
 	box-sizing: border-box;
 }
-html{
+
+html {
 	font-size: 62.5%;
 }
-body{
+
+body {
 	font-size: 1.4rem;
 	line-height: 1.6;
-    font-family: 'Poppins', sans-serif;
-	color: #666;	
+	font-family: 'Poppins', sans-serif;
+	color: #666;
 	background-color: #fff;
 }
+
 /* Typography Defaults ================= */
-h1,h2, h3{
-	color: #000;
+h1,
+h2,
+h3 {
+	color: #111;
+	font-weight: 500;
 }
-h1{
-	font-size: 2.6rem;
-	font-weight: 100;
+
+h1 {
+	font-size: 2.2rem;
 }
-h2{
-	font-size: 2.3rem;
+
+h2 {
+	font-size: 1.8rem;
 }
-h3{
+
+h3 {
 	font-size: 1.6rem;
 }
-p{
-	margin-bottom: 1rem;
+
+p {
+	font-size: 1.4rem;
 }
-img{
+
+img {
 	display: block;
 	width: 7rem;
 }
-a{
+
+a {
 	display: inline-block;
 	padding: .5rem 1rem;
 }
 
 /* Header ============================== */
-/* logo */
+header {
+	background-color: #f5f5f5;
+}
 
+/* logo */
+/* This targets the first p element in the header */
 header p:nth-of-type(1) {
 	color: #093154;
 	font-size: 2.5rem;
 }
+
+/* This targets the second p element in the header */
 header p:nth-of-type(2) {
 	background-color: #ffbe00;
 	display: inline-block
 }
 
 /* Search Bar */
-header button{
+header button {
 	color: #666;
 	background-color: #ffbe00;
 }
-header button:hover{
+
+header button:hover {
 	color: #fff;
 	background-color: #093154;
+}
+
+/* This makes "Call on order" bold */
+header p:nth-of-type(3) {
+	font-weight: 500;
+	font-size: 1.4rem;
+}
+
+/* Cart is 15px / Items  */
+header dt {
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+header dl {
+	font-size: 1.4rem;
 }
 
 /* Navigation Bar */
-
-nav > ul {
+nav>ul {
 	color: #fff;
 	background-color: #093154;
-	display: ;
 }
-nav li{
+
+/* This makes my navigationlist run left to right, instead of up to down */
+nav li {
 	display: inline-block;
 }
+
+/* This isolate the first item in my nav list (categories) */
 nav ul li:nth-of-type(1) {
 	background-color: #ffbe00;
+	color: #666;
+}
+
+/* This makes all of the list items in my navigation turn gold when hovered over except for the first item (categories) */
+nav ul li:not(:nth-of-type(1)):hover {
+	color: #ffbe00;
 }
 
 /* Breadcrumb */
-header ol li{
-	font-size: 2.3rem;
+header ol li {
+	font-size: 1.6rem;
+	color: #111;
 }
 
-/* News ================================ */
 /* About================================ */
-/* ul:not(:nth-of-type(1)) {
-	background-color: aqua;
-  } */
-/* Footer ============================== */
+/* article p:nth-of-type(1) {
+	font-weight: bold;
+} */
 
-a:nth-last-child(2) {
-	font-size: 1.3rem;
-	background-color: #093154;
+/*
+This selects all articles that are not the third one, and makes the first p element bold */
+article:not(:nth-of-type(3)) p:nth-of-type(1) {
+	font-weight: bold;
 }
 
+/* 
+ I figured out 2 ways to target the second p element in the thrid article, which are blockquoates.
+ Targeting the last p element in the blockquotes seemed to be the more direct method. 
 
+ article:nth-of-type(3) p:nth-of-type(2) {
+	font-weight: bold;
+} 
+*/
+blockquote p:nth-last-of-type(1) {
+	font-weight: bold;
+}
 
+/* Footer ============================== */
+footer {
+	background-color: #f5f5f5;
+}
 
+/* I needed the h2 in this section to be the same size as an h1 without interupting the heirachy */
+footer h2 {
+	font-size: 2.2rem;
+}
 
+footer button {
+	color: #666;
+	background-color: #ffbe00;
+}
 
+footer button:hover {
+	color: #666;
+	background-color: #fff;
+}
 
+/* Target the first 2 ul in the fotter to make the text turn bold when hovered */
+/* footer ul:not(:nth-of-type(3)) :hover {
+	font-weight: bold;
+} */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer a:hover {
+	font-weight: 500;
+}
 
 /*Add box model styling using the appropriate CSS properties (max-width, padding, border, margin, display, etc.).*/
 
@@ -146,11 +217,3 @@ a:nth-last-child(2) {
 /*Only include non-semantic elements (divs, spans, etc.) in the HTML if absolutely necessary.*/
 
 /*Avoid excessive use of IDs or classes. Use selectors like descendant, child, nth-of-type, etc. instead.*/
-
-/*Add CSS comments to organize your stylesheet (typography defaults, default structure, header, etc.).*/
-
-/*Make sure that your CSS validates using the W3C CSS Validation Service.*/
-
-/*Commit & Push updates to GitHub.*/
-
-/*Watch the videos in the Resources & Demos for a walk-through of this assignment.*/

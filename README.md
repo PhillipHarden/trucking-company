@@ -17,6 +17,7 @@ The Designing for Web Standards I course examines the process of creating functi
 
 ### CSS
 
+* [The 30 CSS Selectors You Must Memorize](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 * [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
 * [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 * [The 30 CSS Selectors You Must Memorize](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
