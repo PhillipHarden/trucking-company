@@ -75,16 +75,39 @@ h4 {
 
 /* Header ============================== */
 /* Social Media Section */
-#social-media li {
-	display: inline-block;
-	color: #fff;
+#social-media{
 	background-color: #bb162b;
 }
+#social-media li {
+	display: inline-block; 
+	color: #fff;
+	background-color: #bb162b;	
+	border: .2rem solid #fff;
+	border-radius: 50%; /* this makes the border a circle */
+	width: 3.5rem;
+	height: 3.5rem;
+	font-size: 1.8rem;
+	margin: .5rem;
+	text-align: center; /* this centers the icons inside their containers/borders */
+}
+
+#social-media li:hover{
+	background-color: #fb2d2d;
+	border-color: #fb2d2d;
+}
+
+#social-media a:not(5){
+	border: .1rem solid #fff;
+	border-radius: 50%;
+}
+
+
 
 /* This targets the first anchor tag following the ul (Booking Now) */
 header ul+a:nth-last-of-type(1) {
 	color: #fff;
 	background-color: #fb2d2d;
+	float: right;
 }
 
 /* Logo section */
@@ -159,8 +182,9 @@ hr {
 }
 
 figure {
-	border: .2rem solid #838383;
-	width: 30rem;
+	border: .2rem solid #d5d5d5;
+	width: 25.5rem;
+	height: 35rem;
 	text-align: center;
 	display: inline-block;
 
@@ -173,6 +197,8 @@ figure:hover {
 figure img {
 	border-radius: 50%;
 	height: 15rem;
+	width: 15rem;
+	object-fit: cover;
 }
 
 figure a {
@@ -197,6 +223,9 @@ footer img {
 	object-fit: cover;
 	/* this will center the image keeping it from distorting */
 }
+footer ul:nth-last-of-type(3){
+	display: inline-block;
+}
 
 /* Copyright Section */
 #copyright {
@@ -205,3 +234,8 @@ footer img {
 	text-align: center;
 	height: 5rem;
 }
+
+
+
+/* The About Page for the following link: 
+http://www.templatemonsterpreview.com/demo/217151.html?_gl=1*19cyk4e*_ga*NzM5NjQwNTYyLjE2NDM2ODU5ODM.*_ga_FTPYEGT5LY*MTY0NDU0NjE4NC4yNi4xLjE2NDQ1NTAxMTAuNDY.&_ga=2.174379938.1250986273.1644449150-739640562.1643685983  */
