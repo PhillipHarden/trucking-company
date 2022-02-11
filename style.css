@@ -71,32 +71,45 @@ h4 {
 	font-size: 2rem;
 }
 
+h5 {
+	font-size: 2rem;
+	width: fit-content;
+	margin: auto;
+}
+
+h5:hover {
+	color: #fb2d2d;
+}
+
 /* Default Structure =================== */
 
 /* Header ============================== */
 /* Social Media Section */
-#social-media{
+#social-media {
 	background-color: #bb162b;
 }
+
 #social-media li {
-	display: inline-block; 
+	display: inline-block;
 	color: #fff;
-	background-color: #bb162b;	
+	background-color: #bb162b;
 	border: .2rem solid #fff;
-	border-radius: 50%; /* this makes the border a circle */
+	border-radius: 50%;
+	/* this makes the border a circle */
 	width: 3.5rem;
 	height: 3.5rem;
 	font-size: 1.8rem;
 	margin: .5rem;
-	text-align: center; /* this centers the icons inside their containers/borders */
+	text-align: center;
+	/* this centers the icons inside their containers/borders */
 }
 
-#social-media li:hover{
+#social-media li:hover {
 	background-color: #fb2d2d;
 	border-color: #fb2d2d;
 }
 
-#social-media a:not(5){
+#social-media a:not(5) {
 	border: .1rem solid #fff;
 	border-radius: 50%;
 }
@@ -130,7 +143,7 @@ nav ul li {
 	background-size: 100%;
 	background-position: center;
 	color: #fff;
-	height: 25rem;
+	height: 24.5rem;
 }
 
 #breadcrumb li {
@@ -146,39 +159,76 @@ nav ul li {
 }
 
 /* About Us============================= */
-main h2 {
-	color: #fff;
-	background-color: #bb162b;
-	width: fit-content;
-	padding: .1rem 1rem;
+main {
+	margin: 8rem 0;
 }
 
-main button {
+main h3 {
+	color: #fff;
+	background-color: #bb162b;
+	width: 10rem;
+	height: 4rem;
+	padding: .1rem 1rem;
+	text-align: center;
+	border-radius: 0 2rem 0 0;
+	/* this adds a curve to the top right corner of the border */
+}
+
+main a {
 	color: #fff;
 	background-color: #bb162b;
 	border-radius: 3rem;
 	padding: 1.2rem 4rem;
+	width: 19rem;
+	height: 5rem;
 }
 
-main button:hover {
-	background-color: #bb162b;
+main a:hover {
+	background-color: #fb2d2d;
 }
+
+main ul li:nth-of-type(1) img {
+	width: 54rem;
+	height: 23.7rem;
+	object-fit: cover; /* The cover value preserves the original aspect ratio, but the image occupies all the available space. */
+}
+
+main ul li:nth-of-type(2) img {
+	width: 25.5rem;
+	height: 23.6rem;
+	object-fit: cover;
+}
+
+main ul li:nth-of-type(3) img {
+	width: 25.5rem;
+	height: 23.6rem;
+	object-fit: cover;
+}
+
+
 
 /* Our Team  ============================= */
 /* This targets the h3 "OUT TEAM"  */
-main h3:nth-of-type(2) {
+#our-team {
+	margin: 8rem 0;
+	/* 80px of margin on the top & bottom, no margin on the left & right */
+}
+
+#our-team h4 {
 	text-align: center;
 	font-size: 3.6rem;
 	color: #fff;
 	background-color: #bb162b;
-	width: 20rem;
+	width: 14rem;
+	height: 5.5rem;
+	border-radius: 0px 2.5rem 0px 0px;
 }
 
 hr {
 	height: 2px;
 	background-color: #bb162b;
 	border: none;
-	width: 30rem;
+	width: 8rem;
 }
 
 figure {
@@ -194,21 +244,31 @@ figure:hover {
 	border-color: #bb162b;
 }
 
-figure img {
-	border-radius: 50%;
-	height: 15rem;
-	width: 15rem;
-	object-fit: cover;
+figure h5 {
+	padding-top: 4rem;
+	padding-bottom: 3rem;
 }
 
-figure a {
-	color: #bb162b;
+figure img {
+	border-radius: 50%;
+	width: 15rem;
+	height: 15rem;
+	object-fit: cover;
+	padding-bottom: 2rem;
 }
 
 figure li {
+	color: #bb162b;
+	font-size: 2.4rem;
 	display: inline-block;
 	/* this will make the social media icons horizontol  */
+	padding: .5rem;
 }
+
+figure li:hover {
+	color: #fb2d2d;
+}
+
 
 /* Footer ============================== */
 footer {
@@ -216,6 +276,12 @@ footer {
 	background-color: #000;
 }
 
+/* Latest Updates */
+footer ul:nth-of-type(2) li {
+	display: flex;
+	padding: .75rem;
+
+}
 
 footer img {
 	width: 8rem;
@@ -223,8 +289,24 @@ footer img {
 	object-fit: cover;
 	/* this will center the image keeping it from distorting */
 }
-footer ul:nth-last-of-type(3){
+
+/* Social Media List */
+footer ul:nth-of-type(3) li {
 	display: inline-block;
+	color: #fff;
+	background-color: #000;
+	border: .2rem solid #fff;
+	/* this makes the border a circle */
+	width: 3.5rem;
+	height: 3.5rem;
+	font-size: 1.8rem;
+	margin: .5rem;
+	text-align: center;
+}
+
+footer ul:nth-of-type(3) li:hover {
+	background-color: #fb2d2d;
+	border-color: #fb2d2d;
 }
 
 /* Copyright Section */
