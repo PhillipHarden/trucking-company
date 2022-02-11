@@ -1,14 +1,12 @@
-/* 
-COLOR CODES:
-midnight blue: #093154
-gold: #ffbe00
-white: #ffffff
-whitesmoke: #f5f5f5
-dimgray: #666666
-darkgray: #111
+/* COLORS
+firebrick(red): #bb162b #c13
+crimson: #fb2d2d #f33
+whitesmoke: #f5f5f5 #fff
+white: #fff
+black #000
 */
-/*Add typography styling using the appropriate CSS properties (Google Font using @import, font-family, font-size, line-height, color, etc.).*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Train+One&display=swap');
+/* Google Fonts ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap');
 
 /* CSS Reset =========================== */
 body,
@@ -16,7 +14,6 @@ nav,
 section,
 footer,
 article,
-blockquote,
 h1,
 h2,
 h3,
@@ -38,285 +35,173 @@ dd {
 	box-sizing: border-box;
 }
 
+/* Typography Defaults ================= */
 html {
 	font-size: 62.5%;
+	color: #000;
 }
 
 body {
+	background-color: #fff;
 	font-size: 1.4rem;
 	line-height: 1.6;
-	font-family: 'Poppins', sans-serif;
-	color: #666;
-	background-color: #fff;
-	letter-spacing: .1rem;
+	font-family: 'Open Sans', sans-serif;
 }
 
-/* Typography Defaults ================= */
 h1,
 h2,
-h3 {
-	color: #111;
-	font-weight: 500;
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Staatliches', cursive;
+	text-transform: uppercase;
 }
 
 h1 {
-	font-size: 2.2rem;
+	font-size: 5rem;
 }
 
-h2 {
-	font-size: 1.8rem;
-}
-
+h2,
 h3 {
-	font-size: 1.6rem;
+	font-size: 2.5rem;
 }
 
-p {
-	font-size: 1.4rem;
+h4 {
+	font-size: 2rem;
 }
 
-img {
-	display: block;
-	width: 7rem;
-}
-
-a {
-	display: inline-block;
-	padding: .5rem 1rem;
-}
+/* Default Structure =================== */
 
 /* Header ============================== */
-header {
-	background-color: #f5f5f5;
-}
-
-.logo{
-
-}
-
-
-
-/* logo */
-/* This targets the first p element in the header; "TOOLS"*/
-header p:nth-of-type(1) {
-	color: #093154;
-	font-size: 2.5rem;
-	font-family: 'Train One', cursive;
-}
-
-/* This targets the second p element in the header "Mega Tools Store" */
-header p:nth-of-type(2) {
-	background-color: #ffbe00;
-	display: inline-block
-}
-
-/* Search Bar */
-header button {
-	color: #666;
-	background-color: #ffbe00;
-}
-
-header button:hover {
+/* Social Media Section */
+#social-media li {
+	display: inline-block;
 	color: #fff;
-	background-color: #093154;
+	background-color: #bb162b;
 }
 
-/* This makes "Call on order" bold */
-header p:nth-of-type(3) {
-	font-weight: 500;
-	font-size: 1.4rem;
+/* This targets the first anchor tag following the ul (Booking Now) */
+header ul+a:nth-last-of-type(1) {
+	color: #fff;
+	background-color: #fb2d2d;
 }
 
-/* Cart is 15px / Items  */
-header dt {
-	font-weight: 500;
-	font-size: 1.5rem;
-}
-
-header dl {
-	font-size: 1.4rem;
+/* Logo section */
+#logo {
+	background-color: #f5f5f5;
+	font-family: 'Staatliches', cursive;
+	font-size: 5rem;
 }
 
 /* Navigation Bar */
-nav>ul {
-	color: #fff;
-	background-color: #093154;
+nav ul li {
+	display: inline-block;
+	padding: 1rem 2rem;
 }
 
-/* This makes my navigation list run left to right, instead of up to down */
-nav li {
+/* Breadcrumb Section */
+#breadcrumb {
+	background-image: url(https://images.unsplash.com/photo-1590504805643-bb1f94cde7fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	color: #fff;
+	height: 25rem;
+}
+
+#breadcrumb li {
 	display: inline-block;
 }
 
-/* This isolate the first item in my nav list (categories) */
-nav ul li:nth-of-type(1) {
-	background-color: #ffbe00;
-	color: #666;
+#breadcrumb li:nth-last-of-type(1) {
+	color: #fb2d2d;
 }
 
-/* This makes all of the list items in my navigation turn gold when hovered over except for the first item (categories) */
-nav ul li:not(:nth-of-type(1)):hover {
-	color: #ffbe00;
+#breadcrumb li:nth-of-type(1):hover {
+	color: #fb2d2d;
 }
 
-/* Breadcrumb */
-header ol li {
-	font-size: 1.6rem;
-	color: #111;
-}
-
-header ol li:nth-child(1):after {
-	content: "/";
-	padding-right: .5rem;
-}
-
-/* About================================ */
-#main-content {
-	border: .1rem solid #ebe0d0;
-	padding: 2.5rem;
-	margin: 2rem;
-	display: flex;
-	/* Displays an element as a block-level flex container */
+/* About Us============================= */
+main h2 {
+	color: #fff;
+	background-color: #bb162b;
 	width: fit-content;
-	/* This makes the border wrap around the content */
+	padding: .1rem 1rem;
 }
 
-article {
-	width: 40rem;
-	/* 400px */
-	padding: 2rem;
-	/* 20px*/
-	text-align: justify;
-	/* Stretches the lines so that each line has equal width */
+main button {
+	color: #fff;
+	background-color: #bb162b;
+	border-radius: 3rem;
+	padding: 1.2rem 4rem;
 }
 
-article h2,
-blockquote {
-	padding-bottom: 1rem;
+main button:hover {
+	background-color: #bb162b;
 }
 
-/* I used not nth type of to target the pargraphs in the first 2 articles but not the third */
-article:not(:nth-of-type(3)) p {
-	padding-bottom: 1rem;
+/* Our Team  ============================= */
+/* This targets the h3 "OUT TEAM"  */
+main h3:nth-of-type(2) {
+	text-align: center;
+	font-size: 3.6rem;
+	color: #fff;
+	background-color: #bb162b;
+	width: 20rem;
 }
 
-/* Our Company Article
-article:nth-of-type(1) {
+hr {
+	height: 2px;
+	background-color: #bb162b;
+	border: none;
+	width: 30rem;
 }
 
-/* Our Team Article */
-/* article:nth-of-type(2) {
-} */
+figure {
+	border: .2rem solid #838383;
+	width: 30rem;
+	text-align: center;
+	display: inline-block;
 
-/* Testimonials Article */
-/* article:nth-of-type(3) {
-} */
-
-/*
-This selects all articles that are not the third one, and makes the first p element bold */
-article:not(:nth-of-type(3)) p:nth-of-type(1) {
-	font-weight: bold;
 }
 
-/* 
- I figured out 2 ways to target the second p element in the thrid article, which are blockquoates.
- Targeting the last p element in the blockquotes seemed to be the more direct method. 
- article:nth-of-type(3) p:nth-of-type(2) {
-	font-weight: bold;
-} */
-blockquote p:nth-last-of-type(1) {
-	font-weight: bold;
+figure:hover {
+	border-color: #bb162b;
+}
+
+figure img {
+	border-radius: 50%;
+	height: 15rem;
+}
+
+figure a {
+	color: #bb162b;
+}
+
+figure li {
+	display: inline-block;
+	/* this will make the social media icons horizontol  */
 }
 
 /* Footer ============================== */
-
 footer {
-	background-color: #f5f5f5;
-}
-
-/* I needed the h2 in this section to be the same size as an h1 without interupting the heirachy:
-"Sign Up For Newsletter" */
-footer h2 {
-	font-size: 2.2rem;
-	background-color: #093154;
-	color: #ebe0d0;
-}
-
-footer p:nth-of-type(1) {
-	background-color: #093154;
-	color: #ebe0d0;
-}
-
-footer input {
-	background-color: #093154;
-	color: #ebe0d0;
-	border: .1rem solid #ffbe00;
-	border-radius: 1rem;
-	padding: .4rem;
-}
-
-footer button {
-	color: #ebe0d0;
-	background-color: #ffbe00;
-	border: .1rem solid #093154;
-	border-radius: 1rem;
-	padding: .4rem;
-}
-
-footer button:hover {
-	color: #666;
-	background-color: #fff;
-}
-
-/* logo */
-/* This targets "TOOLS"*/
-footer p:nth-of-type(2) {
-	color: #093154;
-	font-size: 2.5rem;
-	font-family: 'Train One', cursive;
-}
-
-/* This targets "Mega Tools Store" */
-footer p:nth-of-type(3) {
-	background-color: #ffbe00;
-	display: inline-block;
-}
-
-/* This targets "demo United States" */
-footer p:nth-last-of-type(1) {
-	display: block;
-}
-/* This will target the "+91 0123456789" */
-a[href="phonenumber.com"]{
-	display: flex;
-}
-/* This will target the "demo@gmail.com" */
-a[href="gmail.com"]{
-	display: flex;
+	color: #fff;
+	background-color: #000;
 }
 
 
-
-
-/* Make all anchor tags bold when hovered over */
-footer a:hover {
-	color: #111;
+footer img {
+	width: 8rem;
+	height: 8rem;
+	object-fit: cover;
+	/* this will center the image keeping it from distorting */
 }
 
-/* Social Media Icons */
-ul:nth-last-of-type(1) li {
-	display: inline-block;
+/* Copyright Section */
+#copyright {
+	color: #fff;
+	background-color: #fb2d2d;
+	text-align: center;
+	height: 5rem;
 }
-
-ul:nth-last-of-type(1) li:hover {
-	color: #111;
-}
-
-
-
-
-/*Add box model styling using the appropriate CSS properties (max-width, padding, border, margin, display, etc.).*/
-
-/*DO NOT add Layout styling. DO NOT recreate the entire page layout. Only add the above styling.*/
-
-/*Avoid excessive use of IDs or classes. Use selectors like descendant, child, nth-of-type, etc. instead.*/
