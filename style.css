@@ -30,7 +30,6 @@ html {
 body {
 	background-color: #fff;
 	font-size: 1.4rem;
-	line-height: 1.6;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -180,12 +179,8 @@ main a {
 main a:hover {
 	background-color: #fb2d2d;
 }
-main figure {
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-}
 
+/* targest the first image of a truck */
 main ul li:nth-of-type(1) img {
 	width: 54rem;
 	height: 23.7rem;
@@ -248,12 +243,12 @@ hr {
 	padding-bottom: 3rem;
 }
 
-#our-team figure img {
+#our-team img {
 	border-radius: 50%;
 	width: 15rem;
 	height: 15rem;
 	object-fit: cover;
-	padding-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 #our-team figure li {
@@ -277,7 +272,6 @@ footer {
 /* Latest Updates */
 footer ul:nth-of-type(2) li {
 	padding: 1.7rem;
-
 }
 
 footer img {
@@ -337,7 +331,7 @@ footer button {
 	text-align: center;
 }
 
-
+/* Add box model styling using the appropriate CSS properties (max-width, padding, border, margin, display, etc.). */
 
 /* The About Page for the following link: 
 http://www.templatemonsterpreview.com/demo/217151.html?_gl=1*19cyk4e*_ga*NzM5NjQwNTYyLjE2NDM2ODU5ODM.*_ga_FTPYEGT5LY*MTY0NDU0NjE4NC4yNi4xLjE2NDQ1NTAxMTAuNDY.&_ga=2.174379938.1250986273.1644449150-739640562.1643685983  */
