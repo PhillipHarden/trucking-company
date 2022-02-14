@@ -30,7 +30,29 @@ The Designing for Web Standards I course examines the process of creating functi
 * [https://specifishity.com/](https://specifishity.com/)
 * [CSS Demo Specificity Misconception](https://codepen.io/cvinczefullsail/pen/poeVdrr?editors=1100)
 * [HTML & CSS code samples and examples to accompany book](https://www.htmlandcssbook.com/code-samples/)
-* 
+
+### CSS Layout
+
+* [Inline elements | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
+* [Block-level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
+* [CSS Flow Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)
+* [Block and inline layout in normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow)
+* [HTML & CSS code samples and examples to accompany book](https://www.htmlandcssbook.com/code-samples/)
+* [CSS Tricks - All About Floats](https://css-tricks.com/all-about-floats/)
+* [CodePen Display Inline-Block Examples](https://codepen.io/cvinczefullsail/pen/ExPZyKo)
+* [CopePen Layout Example](https://codepen.io/cvinczefullsail/pen/abdpNLp)
+
+
+Helpful Links:
+
+* [Normalize.css](https://necolas.github.io/normalize.css/)
+* [CodePen Icon Background Images Example](https://codepen.io/cvinczefullsail/pen/mdOmaNj)
+* [Positioning | MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
+* [CodePen Positioning Example](https://codepen.io/cvinczefullsail/pen/BajpKxM?editors=0100)
+* [::after (:after) Pseudo-element | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
+* [background shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
+* [CSS Tricks - Filter](https://css-tricks.com/almanac/properties/f/filter/)
+* [IconFinder.com](https://www.iconfinder.com/)
 
 
 
