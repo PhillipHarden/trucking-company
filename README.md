@@ -54,5 +54,18 @@ Helpful Links:
 * [CSS Tricks - Filter](https://css-tricks.com/almanac/properties/f/filter/)
 * [IconFinder.com](https://www.iconfinder.com/)
 
+More resorces:
+
+* [Shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
+* [Inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance)
+* [Font shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
+* [Background shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
+* [nth-of-type](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type)
+* [:not](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
+* [calc() function](https://developer.mozilla.org/en-US/docs/Web/CSS/calc())
+* [Floats](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
+* [Clearing floats](https://developer.mozilla.org/en-US/docs/Web/CSS/clear)
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
 
 

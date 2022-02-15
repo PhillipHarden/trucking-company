@@ -127,6 +127,9 @@ button {
 header ul+a:nth-last-of-type(1) {
 	color: #fff;
 	background-color: #fb2d2d;
+	/* float: right;
+	clear: both; */
+
 }
 
 /* Logo section ===================================== */

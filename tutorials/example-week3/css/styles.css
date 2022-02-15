@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* CSS Reset */
+body,
+main,
+div,
+nav,
+section,
+footer,
+article,
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 100%;
+    text-decoration: none;
+    font-weight: normal;
+    color: inherit;
+    box-sizing: border-box;
+}
+
+html {
+    /* 16 x 0.625 = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    /* font-size: 16px; */
+    font-size: 1.6rem;
+    color: #666;
+    background-color: #f9f8f6;
+    background-image: url("../images/dark-wood.jpeg");
+    background-position: center;
+    /* font-family: Georgia, Times, serif; */
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* .wrapper {
+    max-width: 94rem;
+    margin: 2rem auto 2rem auto;
+    border: 0.2rem solid #000;
+    background-color: #ffffff;
+} */
+
+main,
+header,
+footer {
+    max-width: 94rem;
+    margin: 0 auto;
+    border-left: 0.2rem solid #000;
+    border-right: 0.2rem solid #000;
+    background-color: #ffffff;
+}
+
+header {
+    margin-top: 2rem;
+    height: 16rem;
+    background-image: url("../images/header.jpeg");
+    background-repeat: no-repeat;
+    /* border: .2rem solid red; */
+}
+
+/* main{
+    overflow: auto;
+} */
+
+main::after {
+    content: "";
+    display: block;
+    clear: both;
+    /* border: .2rem solid red; */
+}
+
+h1 {
+    /* Hides the h1 by moving it off the page */
+    text-indent: -9999px;
+    max-width: 94rem;
+    height: 13rem;
+    margin: 0;
+    /* border: .2rem solid red; */
+}
+
+h2 {
+    /* font-size: 24px; */
+    font-size: 2.4rem;
+    /* border: .2rem solid red; */
+}
+
+h3 {
+    /* font-size: 18px; */
+    font-size: 1.8rem;
+}
+
+nav,
+footer {
+    clear: both;
+    color: #fff;
+    background-color: #aeaca8;
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    margin: 0px;
+    padding: .5rem 0 .5rem 3rem;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 4rem;
+}
+
+nav li a {
+    color: #fff;
+}
+
+nav li a:hover,
+nav li a.current {
+    color: #000;
+}
+
+section#courses {
+    float: left;
+    max-width: 65.9rem;
+    border-right: 1px solid #eee;
+}
+
+/* article {
+    clear: both;
+    overflow: auto;
+    max-width: 100%;
+} */
+
+article::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+figure {
+    float: left;
+    max-width: 29rem;
+    height: 22rem;
+    padding: .5rem;
+    margin: 2rem;
+    border: .1rem solid #eee;
+}
+
+figcaption {
+    /* font-size: 90%; was 90% of the default 16px */
+    font-size: 1.4rem;
+    text-align: left;
+    /* border: .2rem solid red; */
+}
+
+aside {
+    max-width: 23rem;
+    float: left;
+    padding: 0 0 0 2rem;
+    /* border: .2rem solid red; */
+}
+
+aside section a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    /* border: .2rem solid red; */
+}
+
+aside section a:hover {
+    color: #985d6a;
+    background-color: #efefef;
+}
+
+a {
+    color: #de6581;
+    text-decoration: none;
+    /* border: .2rem solid red; */
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+    
+}
+
+h2 {
+    margin: 1rem 0 .5rem 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0 0 1rem 0;
+    color: #de6581
+    border: .2rem solid red;
+}
+
+article h2 {
+    margin-top: 4rem;
+    /* border: .2rem solid red; */
+}
+
+aside h2 {
+    padding: 3rem 0 1rem 0;
+    color: #de6581
+    /* border: .2rem solid red; */
+}
+
+aside ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    /* border: .2rem solid red; */
+}
+
+aside address {
+    font-style: normal;
+    /* border: .2rem solid red; */
+}
+
+footer p {
+    /* font-size: 80%;  was 80% of the default 16px */
+    font-size: 1.3rem;
+    padding: .7rem 0 0 2rem;
+    /* border: .2rem solid red; */
+}
