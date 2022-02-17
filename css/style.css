@@ -95,8 +95,10 @@ button {
 #social-media {
 	background-color: #bb162b;
 	display: flex;
-	height: 5.8rem;
 	background-size: 100%;
+
+	width: 111rem;
+	margin: 0 auto;
 }
 
 #social-media li {
@@ -143,13 +145,12 @@ header ul+a:nth-last-of-type(1) {
 /* Logo  ===================================== */
 #logo {
 	background-color: #f5f5f5;
-	font-size: 5rem;
 	text-align: center;
 }
 
 /* Navigation Bar */
 nav{
-	max-width: 111rem;
+	width: 111rem;
 	margin: 0 auto;
 }
 nav ul li {
@@ -276,11 +277,14 @@ main {
 	margin-bottom: 1rem;
 }
 
+/* adding the underline design */
 #our-team h3::after{
 	content: "";
+	text-decoration: underline;
 	width: 8rem;
 	height: .2rem;
 	background-color: #bb162b;
+	color: #000;
 	margin: 2rem auto 1rem;
 }
 
@@ -341,6 +345,9 @@ article p:nth-of-type(1):hover {
 footer {
 	color: #fff;
 	background-color: #000;
+
+	width: 111rem;
+	margin: 0 auto;
 }
 
 /* Latest Updates */
