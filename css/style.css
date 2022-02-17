@@ -196,7 +196,8 @@ nav ul li:hover {
 
 /* About Us============================= */
 main {
-	margin: 8rem 0;
+	margin: 0 auto;
+	width: 111rem;
 }
 
 #about-us h3 {
@@ -230,7 +231,7 @@ main {
 }
 
 /* target the first image of a truck */
-#about-us ul li:nth-of-type(1) img {
+#about-us-images img:nth-of-type(1)  {
 	width: 54rem;
 	height: 23.7rem;
 	object-fit: cover;
@@ -238,14 +239,14 @@ main {
 }
 
 /* targets the top/first image of a truck */
-#about-us ul li:nth-of-type(2) img {
+#about-us-images img:nth-of-type(2)  {
 	width: 25.5rem;
 	height: 23.6rem;
 	object-fit: cover;
 }
 
 /* targets the second image of a truck */
-#about-us ul li:nth-of-type(3) img {
+#about-us-images img:nth-of-type(3) {
 	width: 25.5rem;
 	height: 23.6rem;
 	object-fit: cover;
