@@ -1,0 +1,121 @@
+/* Google Fonts ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Luckiest+Guy&display=swap');
+/* CSS Reset =========================== */
+body,nav,section,footer,article,h1,h2,h3,p,a,time,ul,li,dl,dt,dd {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 100%;
+	text-decoration: none;
+	font-weight: normal;
+	color: inherit;
+	box-sizing: border-box;
+}
+/* Typography Defaults ================= */
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 1.4rem;
+	line-height: 1.6;
+	font-family: 'Architects Daughter', cursive;
+	color: #777;	
+	background: #222;
+}
+
+/* Default Structure =================== */
+nav, body > section, footer {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 3rem;
+	outline: 2px solid darkgoldenrod;
+}
+body > section{
+	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+h1,h2{
+	line-height: 1;
+	font-family: 'Luckiest Guy', cursive;
+	color: #fff;
+}
+h1{
+	font-size: 7rem;
+}
+h2{
+	font-size: 2.6rem;
+}
+h3{
+	font-size: 1.6rem;
+	color: #aaa;
+}
+p{
+	margin-bottom: 1rem;
+}
+img{
+	display: block;
+	min-height: 15rem;
+	background: rgba(255,255,255,.1);
+}
+a{
+	display: inline-block;
+	padding: .5rem 1rem;
+	background: rgba(255,255,255,.1);
+	color: #eee;
+}
+/* Header ============================== */
+header{
+	background: #fff;
+}
+nav a {
+	color: #555;
+}
+#logo{
+	display: inline-block;
+	width: 10rem;
+	min-height: 3rem;
+	background: rgba(0,0,0,.2);
+}
+nav li{
+	display: inline-block;
+}
+/* Blog ================================ */
+#blog article:nth-of-type(1){
+	border-top: .5rem solid #e74c3c;
+}
+#blog article:nth-of-type(2){
+	border-top: .5rem solid #f1c40f;
+}
+#blog article:nth-of-type(3){
+	border-top: .5rem solid #1abc9c;
+}
+
+#blog img {
+	width: auto;
+	height: 4rem;
+}
+/* News ================================ */
+time span{
+	font-size: 5rem;
+	color: #eee;
+	vertical-align: middle;
+}
+/* About================================ */
+/* Donation ============================ */
+#donation{
+	background: url(https://coolbackgrounds.io/images/unsplash/ashim-d-silva-medium-ed909940.jpg) no-repeat;
+}
+/* Footer ============================== */
+footer h2{
+	font-size: 1.6rem;
+	color: #aaa;
+	margin-bottom: 1rem;
+}
+#tags{
+	display: inline-block;
+}
+#tags a{
+	background: #e74c3c;
+	color: #eee;
+	padding: 0 .5rem .25rem .5rem;
+}
