@@ -7,7 +7,7 @@ black #000
 */
 
 /* Google Fonts ======================== */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Staatliches&display=swap');
 
 /* CSS Reset =========================== */
 body,
@@ -49,12 +49,13 @@ html {
 body {
 	background-color: #fff;
 	color: #000;
-	font-size: 1.4rem;
+	/* font-size: 1.4rem;
 	line-height: 1.6;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif; 
+	font: size/line-height family;    */
+	font: 1.4rem/1.6 'Open Sans', sans-serif;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -62,43 +63,43 @@ h5,
 h6 {
 	font-family: 'Staatliches', cursive;
 }
-
-h1 {
+h1, h2{
 	font-size: 5rem;
 }
-
-h2 {
-	font-size: 5rem;
-}
-
 h3 {
 	font-size: 2.5rem;
 }
-
 h4 {
 	font-size: 2rem;
 }
 
 /* Default Structure =================== */
-
-
-a,
-button {
+.wrapper {
+	margin: 0 auto;
+	width: 114rem;
+}
+a, button {
 	cursor: pointer;
 }
 
-/* Header ======================================= */
+/* Clear The Floats */
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: block;
+  }
 
+footer::after{
+	content: "";
+	display: block;
+	clear: both;
+}
 
-
+/* Header =============================================================== */
 /* Social Media  ======================*/
 #social-media {
 	background-color: #bb162b;
-	display: flex;
-	background-size: 100%;
-
-	width: 111rem;
-	margin: 0 auto;
+	padding: .5rem 0;
 }
 
 #social-media li {
@@ -114,50 +115,43 @@ button {
 	padding: .7rem;
 }
 
+/* social media icons */
 #social-media ul li img{
 	height: 1.4rem;
 	width: auto;
 }
 
+/* hover social media icons */
 #social-media li:hover {
 	background-color: #fb2d2d;
 	border-color: #fb2d2d;
 }
 
-#social-media li img {
-	width: 100px;
-	height: 100px;
-	background-image: url(my_image.png);
-	background-repeat: no-repeat;
-	background-position: center;
-  }
-  #social-media li img:hover {
-	background-image: url(my_image_active.png);
-  }
-
 /* This targets the first anchor tag following the ul (Booking Now) */
-header ul+a:nth-last-of-type(1) {
+#social-media ul li + a {
 	color: #fff;
 	background-color: #fb2d2d;
 	width: 15rem;
+	float: right; 
 }
 
-/* Logo  ===================================== */
+/* Logo: "Yoauto"  ===================================== */
 #logo {
 	background-color: #f5f5f5;
 	text-align: center;
 }
 
 /* Navigation Bar */
+/* center the elements inside the nav */
 nav{
-	width: 111rem;
-	margin: 0 auto;
+	text-align: center;
 }
 nav ul li {
 	display: inline-block;
 	padding: 1rem 2rem;
 }
 
+/* nav bar hover decoration */
 nav ul li:hover {
 	text-decoration: solid underline #bb162b;
 }
@@ -172,33 +166,38 @@ nav ul li:hover {
 	height: 24.5rem;
 }
 
+/* Home / About */
 #breadcrumb li {
 	display: inline-block;
+	font-size: 1.6rem;
 }
 
+/* "About" */
 #breadcrumb li:nth-last-of-type(1) {
 	color: #bb162b;
 }
 
+/* Hover over Home in the breadcrumb */
 #breadcrumb li:nth-of-type(1):hover {
 	color: #fb2d2d;
 }
 
-/* Breadcrumb */
-#breadcrumb ol li {
-	font-size: 1.6rem;
-}
-
+/* Adds the "/" between Home & About */
 #breadcrumb ol li:nth-child(1):after {
 	content: "/";
 	padding-left: .5rem;
 	color: #fff;
 }
 
-/* About Us============================= */
+/* MAIN =========================================================================================== */
 main {
 	margin: 0 auto;
-	width: 111rem;
+	width: 114rem;
+}
+
+#about-us{
+	width: 55.5rem;
+	float: left;
 }
 
 #about-us h3 {
@@ -229,6 +228,12 @@ main {
 
 #about-us a:hover {
 	background-color: #fb2d2d;
+}
+/* div that the truck images are in */
+#about-us-images{
+	width: 55.5rem;
+	float: right
+;
 }
 
 /* target the first image of a truck */
@@ -292,32 +297,33 @@ main {
 	max-width: 54rem;
 }
 
-#our-team article {
+section {
 	border: .2rem solid #d5d5d5;
-	width: 25.5rem;
+	/* width: 25.5rem; */
+	width: calc(100%/4 - 2rem);
 	height: 35rem;
+	margin: 0 1rem;
 	text-align: center;
-	padding: 3rem 2 rem;
+	float: left;
+	/* padding: 3rem 2rem; */
 }
-
-#our-team article:hover {
+/* hover the border around the team member */
+section:hover {
 	border-color: #bb162b;
 }
 
-/* targets the first p element in each article */
-article p:nth-of-type(1) {
-	padding-top: 4rem;
-	padding-bottom: 3rem;
+/* targets the first p element(their name) in each article */
+section p:nth-of-type(1) {
 	font-size: 2rem;
 	width: fit-content;
 	margin: auto;
 	font-family: 'Staatliches', cursive;
 	text-transform: uppercase;
 }
-
-article p:nth-of-type(1):hover {
+section p:nth-of-type(1):hover {
 	color: #fb2d2d;
 }
+
 /* this will target the image immidiately proceeding a p tag */
 #our-team p + img {
 	border-radius: 50%;
@@ -325,36 +331,62 @@ article p:nth-of-type(1):hover {
 	height: 15rem;
 	object-fit: cover;
 }
-
-#our-team article li{
+/* social media list for each member */
+#our-team section li{
 	display: inline-block;
 	padding: .5rem;
 }
-
-#our-team article ul li img {
+/* social media image */
+#our-team section ul li img {
 	width: auto;
 	height: 2.4rem;
 }
 
-
-#our-team article ul li img:hover {
+/* hover over the social media image */
+#our-team section ul li img:hover {
 	color: #fb2d2d;
 }
 
-/* Footer ============================== */
+
+
+
+
+
+/*=============== FOOTER =========================================================================*/
 footer {
 	color: #fff;
 	background-color: #000;
-
-	width: 111rem;
-	margin: 0 auto;
+	height: 45rem;
+}
+/* ===== ABOUT US DIV ===== */
+#about-us-footer{
+	height: 28.5rem;
+	width: 28.9rem;
+	float: left;
+}
+/* About Us Icons */
+#about-us-footer img{
+	height: 2rem;
+	width: auto;
+}
+/* make this a class */
+#our-services{
+	height: 28.5rem;
+	width: 28.9rem;
+	float: left;
 }
 
+/* Latest Updates ============ */
+#latest-updates{
+	height: 28.5rem;
+	width: 28.9rem;
+	float: left;
+}
 /* Latest Updates */
 footer ul:nth-of-type(2) li {
 	padding: 1.7rem;
 }
-
+/* truck images */
 footer img {
 	/* make the width & height 80px */
 	width: 8rem;
@@ -364,6 +396,12 @@ footer img {
 }
 
 /* Connect With Us */
+#connect-with-us{
+	height: 28.5rem;
+	width: 28.9rem;
+	float: right;
+}
+
 footer input {
 	width: 21rem;
 	height: 4rem;
@@ -379,43 +417,46 @@ footer button {
 	font-size: 1.6rem;
 	border-radius: 0 2rem 2rem 0;
 }
+form img {
+	width: auto;
+	height: 2.4rem;
+}
 
 ::placeholder {
 	padding-left: 1rem;
 }
 
 /* Social Media List */
-#social-media-footer li {
+#connect-with-us li {
 	display: inline-block;
-	color: #fff;
-	background-color: #000;
 	border: .2rem solid #fff;
 	/* this makes the border a circle */
 	width: 3.5rem;
 	height: 3.5rem;
-	margin: .5rem;
+	margin: .2rem;
 	/* this centers the icons inside the border */
 	text-align: center;
-	padding: .8rem 0;
+	padding: .6rem 0;
 }
 
-#social-media-footer img{	
-	height: 1.4rem;
+/* social media icons in the footer */
+#connect-with-us img{	
+	height: 1.8rem;
 	width: auto;
 }
-
-#social-media-footer li:hover {
+#connect-with-us li:hover {
 	background-color: #fb2d2d;
 	border-color: #fb2d2d;
 }
 
-/* Copyright Section */
+/*======== Copyright Section ==================== */
 #copyright {
 	color: #fff;
 	background-color: #bb162b;
 	height: 5rem;
 	text-align: center;
 }
+
 
 /* Add box model styling using the appropriate CSS properties (max-width, padding, border, margin, display, etc.). */
 
