@@ -4,10 +4,11 @@ crimson: #fb2d2d #f33
 whitesmoke: #f5f5f5 #fff
 white: #fff
 black #000
+dark gray #838383
 */
 
 /* Google Fonts ======================== */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Staatliches&display=swap');
 
 /* CSS Reset =========================== */
 body,
@@ -63,12 +64,16 @@ h5,
 h6 {
 	font-family: 'Staatliches', cursive;
 }
-h1, h2{
+
+h1,
+h2 {
 	font-size: 5rem;
 }
+
 h3 {
 	font-size: 2.5rem;
 }
+
 h4 {
 	font-size: 2rem;
 }
@@ -76,20 +81,23 @@ h4 {
 /* Default Structure =================== */
 .wrapper {
 	margin: 0 auto;
-	width: 114rem;
+	width: 111rem;
 }
-a, button {
+
+a,
+button {
 	cursor: pointer;
 }
+
 
 /* Clear The Floats */
 .clearfix::after {
 	content: "";
 	clear: both;
 	display: block;
-  }
+}
 
-footer::after{
+footer::after {
 	content: "";
 	display: block;
 	clear: both;
@@ -99,8 +107,13 @@ footer::after{
 /* Social Media  ======================*/
 #social-media {
 	background-color: #bb162b;
-	padding: .5rem 0;
+	height: 5.6rem;
 }
+
+#social-media ul {
+	padding: .5rem 0 0 0;
+}
+
 
 #social-media li {
 	display: inline-block;
@@ -116,9 +129,9 @@ footer::after{
 }
 
 /* social media icons */
-#social-media ul li img{
+#social-media ul li img {
 	height: 1.4rem;
-	width: auto;
+	width: auto 0;
 }
 
 /* hover social media icons */
@@ -128,11 +141,17 @@ footer::after{
 }
 
 /* This targets the first anchor tag following the ul (Booking Now) */
-#social-media ul li + a {
+#social-media ul li+a {
 	color: #fff;
 	background-color: #fb2d2d;
 	width: 15rem;
-	float: right; 
+	height: 5.6rem;
+	float: right;
+	text-align: center;
+	font-weight: 600;
+	padding: 1.4rem;
+	/* this put the Bookig Now back inlibe with the social media list */
+	margin: -.5rem 0 0 0;
 }
 
 /* Logo: "Yoauto"  ===================================== */
@@ -143,9 +162,10 @@ footer::after{
 
 /* Navigation Bar */
 /* center the elements inside the nav */
-nav{
+nav {
 	text-align: center;
 }
+
 nav ul li {
 	display: inline-block;
 	padding: 1rem 2rem;
@@ -158,7 +178,7 @@ nav ul li:hover {
 
 /* Breadcrumb  */
 #breadcrumb {
-	background-image: url(https://images.unsplash.com/photo-1602710383198-67873f6ab200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+	background-image: url("../images/about-us.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center;
@@ -192,10 +212,11 @@ nav ul li:hover {
 /* MAIN =========================================================================================== */
 main {
 	margin: 0 auto;
-	width: 114rem;
+	width: 111rem;
+	margin: 8rem auto;
 }
 
-#about-us{
+#about-us {
 	width: 55.5rem;
 	float: left;
 }
@@ -229,26 +250,30 @@ main {
 #about-us a:hover {
 	background-color: #fb2d2d;
 }
+
 /* div that the truck images are in */
-#about-us-images{
+#about-us-images {
 	width: 55.5rem;
-	float: right
-;
+	float: right;
 }
 
 /* target the first image of a truck */
-#about-us-images img:nth-of-type(1)  {
+#about-us-images img:nth-of-type(1) {
 	width: 54rem;
 	height: 23.7rem;
+	float: right;
 	object-fit: cover;
+	margin: 0 0 1rem 0;
 	/* The cover value preserves the original aspect ratio, but the image occupies all the available space. */
 }
 
 /* targets the top/first image of a truck */
-#about-us-images img:nth-of-type(2)  {
+#about-us-images img:nth-of-type(2) {
 	width: 25.5rem;
 	height: 23.6rem;
 	object-fit: cover;
+	margin: 0 0 0 1.5rem;
+	float: left;
 }
 
 /* targets the second image of a truck */
@@ -256,7 +281,10 @@ main {
 	width: 25.5rem;
 	height: 23.6rem;
 	object-fit: cover;
+	float: right;
 }
+
+/*===============================================================================================*/
 
 /* add margin to the top & bottom only of the p tags */
 #about-us p {
@@ -264,10 +292,19 @@ main {
 }
 
 /* Our Team  ============================= */
-/* This targets the h3 "OUT TEAM"  */
+/* This targets the h3 "OUR TEAM"  */
 #our-team {
 	/* 80px of margin on the top & bottom, no margin on the left & right */
 	margin: 8rem 0;
+	padding: 1rem;
+	width: 114rem;
+	float: left;
+}
+
+#our-team-header {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
 }
 
 #our-team h3 {
@@ -276,14 +313,13 @@ main {
 	font-size: 3.6rem;
 	width: 14rem;
 	height: 5.5rem;
-	/* this adds a curve to the top right corner of the border */
 	border-radius: 0 2rem 0 0;
-	padding: .5rem;
-	margin-bottom: 1rem;
+	padding: 0 0 0 .7rem;
+	margin: 0 auto 2rem;
 }
 
 /* adding the underline design */
-#our-team h3::after{
+/* #our-team h3::after{
 	content: "";
 	text-decoration: underline;
 	width: 8rem;
@@ -291,51 +327,69 @@ main {
 	background-color: #bb162b;
 	color: #000;
 	margin: 2rem auto 1rem;
-}
+} */
 
-#our-team p {
+/* #our-team p {
+	width: 54rem;
+	margin: 0 auto 2rem;
+	text-align: center;
+} */
+
+#our-team h3+p {
+	color: #838383;
+	padding: 0 0 5rem 0;
+	text-align: center;
 	max-width: 54rem;
+	margin: 0 auto;
 }
 
-section {
+#our-team section {
+	text-align: center;
 	border: .2rem solid #d5d5d5;
-	/* width: 25.5rem; */
 	width: calc(100%/4 - 2rem);
 	height: 35rem;
 	margin: 0 1rem;
-	text-align: center;
 	float: left;
-	/* padding: 3rem 2rem; */
+	overflow: auto;
 }
+
 /* hover the border around the team member */
-section:hover {
+#our-team section:hover {
 	border-color: #bb162b;
 }
 
-/* targets the first p element(their name) in each article */
+/* targets the first p element(team member's name) in each article */
 section p:nth-of-type(1) {
 	font-size: 2rem;
 	width: fit-content;
-	margin: auto;
+	margin: 3.5rem auto 2.5rem;
 	font-family: 'Staatliches', cursive;
 	text-transform: uppercase;
 }
+
 section p:nth-of-type(1):hover {
 	color: #fb2d2d;
 }
 
-/* this will target the image immidiately proceeding a p tag */
-#our-team p + img {
+/* this will target the image immidiately proceeding a p tag (team member's picture) */
+#our-team p+img {
 	border-radius: 50%;
 	width: 15rem;
 	height: 15rem;
 	object-fit: cover;
 }
+
+/* Team Member's Title */
+#our-team img+p {
+	padding: .5rem 0 1.4rem;
+}
+
 /* social media list for each member */
-#our-team section li{
+#our-team section li {
 	display: inline-block;
 	padding: .5rem;
 }
+
 /* social media image */
 #our-team section ul li img {
 	width: auto;
@@ -347,65 +401,78 @@ section p:nth-of-type(1):hover {
 	color: #fb2d2d;
 }
 
-
-
-
-
-
 /*=============== FOOTER =========================================================================*/
 footer {
 	color: #fff;
 	background-color: #000;
-	height: 45rem;
-}
-/* ===== ABOUT US DIV ===== */
-#about-us-footer{
-	height: 28.5rem;
-	width: 28.9rem;
+	height: 50rem;
 	float: left;
+	width: 100%;
+	padding: 8rem 0 0 0;
 }
+
+footer section {
+	width: calc(100%/4 - 2rem);
+	float: left;
+	overflow: auto;
+}
+
+footer h3 {
+	padding: 0 0 2rem 0;
+}
+
+/* ===== ABOUT US ===== */
 /* About Us Icons */
-#about-us-footer img{
+#about-us-footer img {
 	height: 2rem;
 	width: auto;
-}
-/* make this a class */
-#our-services{
-	height: 28.5rem;
-	width: 28.9rem;
 	float: left;
+}
+
+dt {
+	font-weight: 800;
+	display: inline;
+	padding: 0 0 0 1rem;
+}
+
+dd {
+	max-width: 20rem;
+	padding: 0 0 2rem 3rem;
+}
+
+/* Our Services ===============*/
+#our-services ul li {
+	margin: 0 0 2rem 0;
 }
 
 /* Latest Updates ============ */
-#latest-updates{
-	height: 28.5rem;
-	width: 28.9rem;
-	float: left;
-}
 /* Latest Updates */
-footer ul:nth-of-type(2) li {
-	padding: 1.7rem;
+#latest-updates ul li {
+	padding: .2rem;
 }
+
+#latest-updates ul li a {
+	padding: 0 0 0 .5rem;
+}
+
+
 /* truck images */
-footer img {
-	/* make the width & height 80px */
+#latest-updates img {
 	width: 8rem;
 	height: 8rem;
-	/* this will center the image keeping it from distorting */
 	object-fit: cover;
 }
 
-/* Connect With Us */
-#connect-with-us{
-	height: 28.5rem;
-	width: 28.9rem;
-	float: right;
+/* Connect With Us ==============*/
+form {
+	margin: 0 0 2rem 0;
 }
 
 footer input {
 	width: 21rem;
 	height: 4rem;
 	border: .2rem solid #bb162b;
+	float: left;
 }
 
 footer button {
@@ -414,19 +481,18 @@ footer button {
 	background-color: #bb162b;
 	color: #fff;
 	border: none;
-	font-size: 1.6rem;
 	border-radius: 0 2rem 2rem 0;
-}
-form img {
-	width: auto;
-	height: 2.4rem;
 }
 
 ::placeholder {
-	padding-left: 1rem;
+	padding: 0 0 0 1rem;
 }
 
 /* Social Media List */
+#connect-with-us ul {
+	margin: .5rem 0;
+}
+
 #connect-with-us li {
 	display: inline-block;
 	border: .2rem solid #fff;
@@ -440,10 +506,11 @@ form img {
 }
 
 /* social media icons in the footer */
-#connect-with-us img{	
+#connect-with-us img {
 	height: 1.8rem;
 	width: auto;
 }
+
 #connect-with-us li:hover {
 	background-color: #fb2d2d;
 	border-color: #fb2d2d;
@@ -453,10 +520,13 @@ form img {
 #copyright {
 	color: #fff;
 	background-color: #bb162b;
-	height: 5rem;
 	text-align: center;
+	margin: 3rem 0 0 0;
 }
 
+#copyright p {
+	padding: 2.2rem 0;
+}
 
 /* Add box model styling using the appropriate CSS properties (max-width, padding, border, margin, display, etc.). */
 
