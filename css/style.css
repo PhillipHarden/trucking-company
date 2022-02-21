@@ -88,19 +88,12 @@ a,
 button {
 	cursor: pointer;
 }
-
-
+/* CLEAR FLOATS =============================================================== */
 /* Clear The Floats */
 .clearfix::after {
 	content: "";
 	clear: both;
 	display: block;
-}
-
-footer::after {
-	content: "";
-	display: block;
-	clear: both;
 }
 
 /* Header =============================================================== */
@@ -114,16 +107,13 @@ footer::after {
 	padding: .5rem 0 0 0;
 }
 
-
 #social-media li {
 	display: inline-block;
 	border: .2rem solid #fff;
-	/* this makes the border a circle */
 	border-radius: 50%;
 	width: 3.6rem;
 	height: 3.6rem;
 	margin: .5rem;
-	/* this centers the icons inside their containers/borders */
 	text-align: center;
 	padding: .7rem;
 }
@@ -131,7 +121,6 @@ footer::after {
 /* social media icons */
 #social-media ul li img {
 	height: 1.4rem;
-	width: auto 0;
 }
 
 /* hover social media icons */
@@ -141,17 +130,17 @@ footer::after {
 }
 
 /* This targets the first anchor tag following the ul (Booking Now) */
-#social-media ul li+a {
+#social-media ul+a {
 	color: #fff;
 	background-color: #fb2d2d;
 	width: 15rem;
 	height: 5.6rem;
-	float: right;
+	float: right; /* FLOAT =============================================================== */
 	text-align: center;
 	font-weight: 600;
 	padding: 1.4rem;
-	/* this put the Bookig Now back inlibe with the social media list */
-	margin: -.5rem 0 0 0;
+	/* this put the Booking Now back inline with the social media list */
+	margin: -5.1rem 0 0 0;
 }
 
 /* Logo: "Yoauto"  ===================================== */
@@ -218,7 +207,7 @@ main {
 
 #about-us {
 	width: 55.5rem;
-	float: left;
+	float: left;   /* FLOAT =============================================================== */
 }
 
 #about-us h3 {
@@ -254,14 +243,14 @@ main {
 /* div that the truck images are in */
 #about-us-images {
 	width: 55.5rem;
-	float: right;
+	float: right; /* FLOAT =============================================================== */
 }
 
 /* target the first image of a truck */
 #about-us-images img:nth-of-type(1) {
 	width: 54rem;
 	height: 23.7rem;
-	float: right;
+	float: right; /* FLOAT =============================================================== */
 	object-fit: cover;
 	margin: 0 0 1rem 0;
 	/* The cover value preserves the original aspect ratio, but the image occupies all the available space. */
@@ -273,7 +262,7 @@ main {
 	height: 23.6rem;
 	object-fit: cover;
 	margin: 0 0 0 1.5rem;
-	float: left;
+	float: left; /* FLOAT =============================================================== */
 }
 
 /* targets the second image of a truck */
@@ -281,7 +270,7 @@ main {
 	width: 25.5rem;
 	height: 23.6rem;
 	object-fit: cover;
-	float: right;
+	float: right; /* FLOAT =============================================================== */
 }
 
 /*===============================================================================================*/
@@ -298,7 +287,7 @@ main {
 	margin: 8rem 0;
 	padding: 1rem;
 	width: 114rem;
-	float: left;
+	float: left; /* FLOAT =============================================================== */
 }
 
 #our-team-header {
@@ -318,23 +307,6 @@ main {
 	margin: 0 auto 2rem;
 }
 
-/* adding the underline design */
-/* #our-team h3::after{
-	content: "";
-	text-decoration: underline;
-	width: 8rem;
-	height: .2rem;
-	background-color: #bb162b;
-	color: #000;
-	margin: 2rem auto 1rem;
-} */
-
-/* #our-team p {
-	width: 54rem;
-	margin: 0 auto 2rem;
-	text-align: center;
-} */
-
 #our-team h3+p {
 	color: #838383;
 	padding: 0 0 5rem 0;
@@ -349,7 +321,7 @@ main {
 	width: calc(100%/4 - 2rem);
 	height: 35rem;
 	margin: 0 1rem;
-	float: left;
+	float: left; /* FLOAT =============================================================== */
 	overflow: auto;
 }
 
@@ -406,14 +378,14 @@ footer {
 	color: #fff;
 	background-color: #000;
 	height: 50rem;
-	float: left;
+	float: left; /* FLOAT =============================================================== */
 	width: 100%;
 	padding: 8rem 0 0 0;
 }
 
 footer section {
 	width: calc(100%/4 - 2rem);
-	float: left;
+	float: left; /* FLOAT =============================================================== */
 	overflow: auto;
 }
 
@@ -426,7 +398,7 @@ footer h3 {
 #about-us-footer img {
 	height: 2rem;
 	width: auto;
-	float: left;
+	float: left; /* FLOAT =============================================================== */
 }
 
 dt {
@@ -472,7 +444,7 @@ footer input {
 	width: 21rem;
 	height: 4rem;
 	border: .2rem solid #bb162b;
-	float: left;
+	float: left; /* FLOAT =============================================================== */
 }
 
 footer button {
