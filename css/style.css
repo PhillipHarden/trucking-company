@@ -19,6 +19,8 @@ footer,
 article,
 form,
 button,
+textarea,
+button,
 input,
 h1,
 h2,
@@ -88,6 +90,7 @@ a,
 button {
 	cursor: pointer;
 }
+
 /* CLEAR FLOATS =============================================================== */
 /* Clear The Floats */
 .clearfix::after {
@@ -174,6 +177,10 @@ nav ul li:hover {
 	color: #fff;
 	height: 24.5rem;
 }
+/* added padding to push the content to the middle */
+#breadcrumb h2{
+	padding: 6rem 0 0 0;
+}
 
 /* Home / About */
 #breadcrumb li {
@@ -207,7 +214,7 @@ main {
 
 #about-us {
 	width: 55.5rem;
-	float: left;   /* FLOAT =============================================================== */
+	float: left;  
 }
 
 #about-us h3 {
@@ -243,17 +250,16 @@ main {
 /* div that the truck images are in */
 #about-us-images {
 	width: 55.5rem;
-	float: right; /* FLOAT =============================================================== */
+	float: right; 
 }
 
 /* target the first image of a truck */
 #about-us-images img:nth-of-type(1) {
 	width: 54rem;
 	height: 23.7rem;
-	float: right; /* FLOAT =============================================================== */
+	float: right; 
 	object-fit: cover;
 	margin: 0 0 1rem 0;
-	/* The cover value preserves the original aspect ratio, but the image occupies all the available space. */
 }
 
 /* targets the top/first image of a truck */
@@ -262,7 +268,7 @@ main {
 	height: 23.6rem;
 	object-fit: cover;
 	margin: 0 0 0 1.5rem;
-	float: left; /* FLOAT =============================================================== */
+	float: left; 
 }
 
 /* targets the second image of a truck */
@@ -270,7 +276,7 @@ main {
 	width: 25.5rem;
 	height: 23.6rem;
 	object-fit: cover;
-	float: right; /* FLOAT =============================================================== */
+	float: right; 
 }
 
 /*===============================================================================================*/
@@ -287,7 +293,7 @@ main {
 	margin: 8rem 0;
 	padding: 1rem;
 	width: 114rem;
-	float: left; /* FLOAT =============================================================== */
+	float: left; 
 }
 
 #our-team-header {
@@ -321,7 +327,7 @@ main {
 	width: calc(100%/4 - 2rem);
 	height: 35rem;
 	margin: 0 1rem;
-	float: left; /* FLOAT =============================================================== */
+	float: left; 
 	overflow: auto;
 }
 
@@ -331,7 +337,7 @@ main {
 }
 
 /* targets the first p element(team member's name) in each article */
-section p:nth-of-type(1) {
+#our-team section p:nth-of-type(1) {
 	font-size: 2rem;
 	width: fit-content;
 	margin: 3.5rem auto 2.5rem;
@@ -339,7 +345,7 @@ section p:nth-of-type(1) {
 	text-transform: uppercase;
 }
 
-section p:nth-of-type(1):hover {
+#our-team section p:nth-of-type(1):hover {
 	color: #fb2d2d;
 }
 
@@ -372,6 +378,101 @@ section p:nth-of-type(1):hover {
 #our-team section ul li img:hover {
 	color: #fb2d2d;
 }
+/*=============== Contact Main =========================================================================*/
+/* Contact Form =================================*/
+#contact-us {
+	margin: 8rem 0;
+}
+
+#contact-us p {
+	width: 54rem;
+	color: #838383;
+	padding: 2rem 0 4rem 0;
+
+}
+
+#contact-us h3 {
+	color: #fff;
+	background-color: #bb162b;
+	font-size: 3.4rem;
+	width: 18rem;
+	height: 5.4rem;
+	text-align: center;
+	border-radius: 0 2rem 0 0;
+	padding: .3rem;
+}
+
+.user-input input {
+	width: calc(100%/2 - 1rem);
+	border: .2rem solid #d0cfcf;
+	border-radius: 2rem;
+	height: 4rem;
+	padding: 0 0 0 1rem;
+}
+
+.user-input{
+	padding: .8rem 0;
+}
+/* Targets the second input form in each user-input div */
+.user-input input:nth-last-of-type(1){
+	float: right;
+}
+
+ textarea{
+	border: .2rem solid #d0cfcf;
+	border-radius: 2rem;
+	height: 12.5rem;
+	width: 100%;
+	padding: 2rem 1.5rem 0 1rem;
+	font-family: 'Open Sans', sans-serif;
+ }
+
+#contact-us button{
+	color: #fb2d2d;
+	border: .1rem solid #fb2d2d;
+	border-radius: 3rem;
+	padding: 2rem 4rem;
+	background-color: #fff;
+	text-transform: uppercase;
+}
+
+#contact-us button:hover{
+	color: #fff;
+	background-color: #fb2d2d;
+}
+
+/* Contact Information =====================================================================*/
+#contact-info {
+	background-color: #f5f5f5;
+	padding: 8rem 0 5rem 0;
+}
+
+#contact-info section {
+	width: calc(100%/3 - 2rem);
+	margin: 2rem;
+	background-color: #fff;
+	text-align: center;
+	padding: 2rem 0;
+	font-family: 'Staatliches', cursive;
+	font-size: 600;
+	font-size: 1.6rem;
+	margin: 0 1rem;
+	float: left;
+	overflow: auto;
+}
+
+#contact-info a:hover {
+	color: #fb2d2d;
+}
+
+
+
+
+
+
+
+
+
 
 /*=============== FOOTER =========================================================================*/
 footer {
@@ -419,13 +520,19 @@ dd {
 
 /* Latest Updates ============ */
 /* Latest Updates */
-#latest-updates ul li {
+#latest-updates div:nth-of-type(1) {
 	padding: .2rem;
+	display: inline-block;
 }
 
-#latest-updates ul li a {
-	padding: 0 0 0 .5rem;
+#latest-updates div:nth-of-type(2) {
+	padding: .2rem;
+	display: inline-block;
+	max-width: 15rem;
+	/* padding: 0 0 -2rem 0; */
+	/* margin: 0 0 2rem 0; */
 }
+
 
 
 /* truck images */
